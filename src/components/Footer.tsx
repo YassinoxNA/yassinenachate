@@ -126,9 +126,7 @@ const Footer: React.FC = () => {
         {/* Copyright et bouton retour en haut */}
         <div className="py-6 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-            <span>© {new Date().getFullYear()} Yassine Nachate. Fait avec</span>
-            <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-            <span>et React + Tailwind CSS</span>
+            <span>© {new Date().getFullYear()} Yassine Nachate. </span>
           </div>
 
           <button

@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
     },
     {
       title: "Développeur Web",
-      company: "3W Média",
+      company: "Imperium",
       location: "Casablanca, Maroc", 
       period: "Février 2024 - Décembre 2024",
       description: "Développement d'une plateforme de gestion d'événements avec fonctionnalités avancées de personnalisation et système de notifications en temps réel.",

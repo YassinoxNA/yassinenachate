@@ -223,7 +223,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Statistiques */}
-        <div className="mt-16 grid md:grid-cols-4 gap-6">
+        {/* <div className="mt-16 grid md:grid-cols-4 gap-6">
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 text-center">
             <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">6+</div>
             <div className="text-gray-600 dark:text-gray-400">Projets Réalisés</div>
@@ -240,7 +240,7 @@ const Projects: React.FC = () => {
             <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">10+</div>
             <div className="text-gray-600 dark:text-gray-400">Technologies</div>
           </div>
-        </div>
+        </div> */}
 
         {/* Appel à l'action */}
         <div className="text-center mt-16">

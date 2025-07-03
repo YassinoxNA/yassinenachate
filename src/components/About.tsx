@@ -3,11 +3,7 @@ import { User, Heart, Target, Zap } from 'lucide-react';
 
 const About: React.FC = () => {
   const highlights = [
-    {
-      icon: <User className="w-6 h-6" />,
-      title: "Professionnel",
-      description: "Plus de 3 années d'expérience dans le développement web"
-    },
+  
     {
       icon: <Heart className="w-6 h-6" />,
       title: "Passionné",
@@ -41,8 +37,7 @@ const About: React.FC = () => {
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Bonjour ! Je suis Yassine Nachate, développeur Front-End passionné basé à Rabat, Maroc. 
-                Avec plus de 3 années d'expérience, je me spécialise dans la création d'interfaces 
+                Bonjour ! Je suis Yassine Nachate, développeur Front-End , je me spécialise dans la création d'interfaces 
                 utilisateur modernes et performantes en utilisant React, Angular et les dernières technologies web.
               </p>
               
@@ -83,7 +78,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-xl">
+            {/* <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-xl">
               <img
                 src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Développement web"
@@ -95,14 +90,14 @@ const About: React.FC = () => {
                   <div className="text-sm text-gray-600 dark:text-gray-400">Projets réalisés</div>
                 </div>
               </div>
-            </div>
+            </div> */}
             
-            <div className="absolute -top-4 -left-4 bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-xl shadow-xl text-white">
+            {/* <div className="absolute -top-4 -left-4 bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-xl shadow-xl text-white">
               <div className="text-center">
                 <div className="text-2xl font-bold">3+</div>
                 <div className="text-sm opacity-90">Années d'expérience</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
