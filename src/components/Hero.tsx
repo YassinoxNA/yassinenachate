@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const titles = ['Développeur Front-End', 'Spécialiste React & Angular', 'Expert en UI/UX'];
+  const titles = ['Développeur Front-End', 'Spécialiste React '];
 
   useEffect(() => {
     const handleTyping = () => {

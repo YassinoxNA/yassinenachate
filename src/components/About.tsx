@@ -33,7 +33,7 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-1 gap-16 items-center">
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
@@ -77,28 +77,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative">
-            {/* <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-xl">
-              <img
-                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Développement web"
-                className="w-full h-80 object-cover rounded-xl shadow-lg"
-              />
-              <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">15+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Projets réalisés</div>
-                </div>
-              </div>
-            </div> */}
-            
-            {/* <div className="absolute -top-4 -left-4 bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-xl shadow-xl text-white">
-              <div className="text-center">
-                <div className="text-2xl font-bold">3+</div>
-                <div className="text-sm opacity-90">Années d'expérience</div>
-              </div>
-            </div> */}
-          </div>
+          
         </div>
       </div>
     </section>
