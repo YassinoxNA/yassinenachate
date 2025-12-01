@@ -19,10 +19,10 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   }, []);
 
   const navItems = [
-    { href: '#about', label: 'À Propos' },
-    { href: '#experience', label: 'Expérience' },
-    { href: '#skills', label: 'Compétences' },
-    { href: '#projects', label: 'Projets' },
+    { href: '#about', label: 'About' },
+    { href: '#experience', label: 'Experience' },
+    { href: '#skills', label: 'Skills' },
+    { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -35,15 +35,17 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20' 
-        : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20'
+          : 'bg-transparent'
+      }`}
+    >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Yassine Nachate
+            Yassine Nachate
           </div>
 
           {/* Desktop Navigation */}
@@ -61,6 +63,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-105"
+              title="Toggle theme"
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -71,6 +74,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+              title="Toggle theme"
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>

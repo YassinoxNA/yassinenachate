@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Outils & Autres",
+      title: "Tools & Others",
       color: "from-orange-500 to-red-500",
       skills: [
         { name: "Git", level: 90 },
@@ -70,44 +70,47 @@ const Skills: React.FC = () => {
   ];
 
   const languages = [
-    { name: "Arabe", level: 100, description: "Langue maternelle" },
-    { name: "Français", level: 85, description: "Courant" },
-    { name: "Anglais", level: 70, description: "Intermédiaire" }
+    { name: "Arabic", level: 100, description: "Native language" },
+    { name: "French", level: 85, description: "Fluent" },
+    { name: "English", level: 70, description: "Intermediate" }
   ];
 
-  const SkillBar: React.FC<{ skill: { name: string; level: number }; delay: number; color: string }> = 
+  const SkillBar: React.FC<{ skill: { name: string; level: number }; delay: number; color: string }> =
     ({ skill, delay, color }) => {
-    return (
-      <div className="mb-4">
-        <div className="flex justify-between items-center mb-2">
-          <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
-          <span className="text-gray-500 dark:text-gray-400 text-sm">{skill.level}%</span>
+      return (
+        <div className="mb-4">
+          <div className="flex justify-between items-center mb-2">
+            <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
+            <span className="text-gray-500 dark:text-gray-400 text-sm">{skill.level}%</span>
+          </div>
+          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+            <div
+              className={`h-2 rounded-full bg-gradient-to-r ${color} transition-all duration-1000 ease-out`}
+              style={{
+                width: isVisible ? `${skill.level}%` : '0%',
+                transitionDelay: `${delay}ms`
+              }}
+            ></div>
+          </div>
         </div>
-        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-          <div
-            className={`h-2 rounded-full bg-gradient-to-r ${color} transition-all duration-1000 ease-out`}
-            style={{
-              width: isVisible ? `${skill.level}%` : '0%',
-              transitionDelay: `${delay}ms`
-            }}
-          ></div>
-        </div>
-      </div>
-    );
-  };
+      );
+    };
 
   return (
     <section ref={sectionRef} id="skills" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* TITLE */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-            Mes Compétences
+            My Skills
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Technologies et outils que je maîtrise pour créer des solutions exceptionnelles
+            Technologies and tools I use to build efficient and powerful web solutions
           </p>
         </div>
 
+        {/* SKILL CATEGORIES */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div
@@ -137,10 +140,10 @@ const Skills: React.FC = () => {
           ))}
         </div>
 
-        {/* Langues */}
+        {/* LANGUAGES */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center">
-            Langues
+            Languages
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {languages.map((lang, index) => (
@@ -168,16 +171,17 @@ const Skills: React.FC = () => {
           </div>
         </div>
 
-        {/* Autres compétences */}
+        {/* OTHER SKILLS */}
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
-            Autres Compétences & Qualités
+            Other Skills & Strengths
           </h3>
+
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Esprit d\'équipe', 'Sérieux', 'Ponctuel', 'Agile/Scrum', 'API REST',
-              'Responsive Design', 'Performance Optimization', 'UML', 'Merise',
-              'Modélisation', 'MongoDB', 'SQL Server', 'Oracle'
+              "Teamwork", "Serious", "Punctual", "Agile/Scrum", "REST API",
+              "Responsive Design", "Performance Optimization", "UML", "Merise",
+              "Modeling", "MongoDB", "SQL Server", "Oracle"
             ].map((skill, index) => (
               <span
                 key={index}
@@ -188,6 +192,7 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

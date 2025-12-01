@@ -4,177 +4,266 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Développeur Front-end",
+  title: "Freelance Front-End Developer",
+  company: "Self-employed",
+  location: "Remote",
+  period: "2025 - Present",
+  description:
+    "Development of modern and responsive landing pages for clients using React.js and Tailwind CSS.",
+  technologies: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
+  current: false,
+  projects: [
+    {
+      title: "Landing Pages Development",
+      tasks: [
+        "Created landing pages for different client needs using React.js and Tailwind CSS.",
+        "Built reusable and maintainable React components for sections such as Hero, Features, Pricing, and FAQ.",
+        "Implemented responsive layouts optimized for all screen sizes.",
+        "Integrated contact forms and newsletter forms with API submission.",
+        "Configured routing, project structure, and reusable components for scalability.",
+        "Ensured high performance and optimized loading time.",
+        "Delivered fully functional pages ready for deployment."
+      ]
+    }
+  ]
+}
+,
+    {
+      title: "Full Stack Developer",
       company: "Imperium",
-      location: "Casablanca, Maroc",
-      period: "Décembre 2025 - Présent",
-      description: "Développement d'une plateforme cinématographique avec interface utilisateur avancée pour la visualisation des films. Implémentation de filtres avancés et gestion des notifications.",
+      location: "Casablanca, Morocco",
+      period: "December 2025 - Present",
+      description:
+        "Development of advanced web platforms with a focus on performance optimization, scalability, and modern software architecture.",
       technologies: ["React.js", "Tailwind CSS", "Metronic", "Symfony", "Postman", "Git", "GitLab"],
       current: true,
       projects: [
-        "Projet LineUp - Plateforme cinématographique",
-        "Développement de l'interface utilisateur pour la visualisation des films",
-        "Implémentation des filtres avancés et gestion des notifications",
-        "Ajout des fonctionnalités de partage et affichage des films les plus consultés",
-        "Optimisation de la performance et de l'expérience utilisateur"
+         {
+          title: "Share+ – Social Media Management Platform",
+          tasks: [
+            "Developed a complete multi-network social media management solution (Facebook, Instagram, LinkedIn…).",
+            "Designed the marketing landing page including Hero, Features, Pricing, FAQ, Support, and Footer sections.",
+            "Created a modern content editor allowing users to write, customize, and prepare cross-platform posts.",
+            "Implemented a visual drag-and-drop scheduling calendar for planning and organizing posts.",
+            "Built real-time analytics dashboards with engagement rate, reach, impressions, and performance indicators.",
+            "Integrated 100% automated publishing system to post content across all connected networks.",
+            "Developed collaborative team features: role assignment, content approval, and secure workspace.",
+            "Implemented newsletter subscription with API integration and validation.",
+            "Optimized UI/UX, SEO, performance, and responsiveness across all devices.",
+            "Ensured smooth and scalable architecture for future features and integrations."
+          ]
+        }
+        ,
+        {
+          title: "LineUp Project - Cinema Platform",
+          tasks: [
+            "Developed the user interface for browsing and viewing movies",
+            "Implemented advanced filters (category, year, popularity, trends…) ",
+            "Managed real-time notifications and favorites list",
+            "Added sharing features and display of most viewed movies",
+            "Optimized front-end performance (lazy loading, pagination, API caching)"
+          ]
+        },
+        {
+          title: "Project+ - Collaborative Project Management Platform",
+          tasks: [
+            "Designed the interface for project, task, and team management",
+            "Integrated interactive dashboards with visual indicators (KPIs, progress…) ",
+            "Implemented roles and permissions (Admin, Manager, Member, Guest)",
+            "Managed activity logs, history tracking, and internal notifications",
+            "Improved UX/UI using React.js, Tailwind CSS & Metronic"
+          ]
+        },
+
       ]
     },
+
+   {
+  title: "Web Developer",
+  company: "Imperium",
+  location: "Casablanca, Morocco",
+  period: "February 2024 - December 2024",
+  description:
+    "Developed Organizer, an advanced event and calendar management platform with personalized calendars, reminders, contacts, notes, and user settings.",
+  technologies: [
+    "React.js",
+    "Symfony 7",
+    "MySQL",
+    "HTML5",
+    "CSS3",
+    "Bootstrap 5",
+    "Git",
+    "GitLab",
+    "Postman"
+  ],
+  current: false,
+  projects: [
     {
-      title: "Développeur Web",
-      company: "Imperium",
-      location: "Casablanca, Maroc", 
-      period: "Février 2024 - Décembre 2024",
-      description: "Développement d'une plateforme de gestion d'événements avec fonctionnalités avancées de personnalisation et système de notifications en temps réel.",
-      technologies: ["React.js", "Symfony 7", "MySQL", "Html5", "Css3", "Bootstrap 5", "API", "Git", "GitLab", "Postman"],
-      current: false,
-      projects: [
-        "Développement d'une plateforme de gestion d'événements",
-        "Personnalisation de la liste des événements avec ajout, modification et suppression",
-        "Affichage des détails de chaque événement et ajout de contacts liés",
-        "Système de notifications et rappels automatiques",
-        "Personnalisation des calendriers et gestion des événements favoris",
-        "Réservation d'événements et ajout de notes associées"
+      title: "Organizer – Event & Calendar Management Platform",
+      tasks: [
+        "Implemented full CRUD operations for events (create, edit, delete)",
+        "Developed customizable calendars with themes, privacy, and multiple views",
+        "Added reminders, favorites, and upcoming events panel",
+        "Built a contact module linked to events",
+        "Integrated notes management for each event",
+        "Implemented advanced search and filtering across calendars",
+        "Developed URL-based calendar subscription system",
+        "Added user settings: language, region, timezone",
+        "Created a modern and responsive UI using React.js & Tailwind CSS",
+        "Ensured secure REST API communication with Symfony 7"
       ]
-    },
+    }
+  ]
+},
+
+
     {
-      title: "Développeur Web",
+      title: "Web Developer",
       company: "Minova Consulting",
-      location: "Tinghir, Maroc",
-      period: "Juillet 2023 - Septembre 2023",
-      description: "Conception et réalisation d'un site e-commerce complet avec système de panier, gestion des produits et interface d'administration.",
+      location: "Tinghir, Morocco",
+      period: "July 2023 - September 2023",
+      description:
+        "Designed and developed a complete e-commerce website with cart, product management, and admin interface.",
       technologies: ["Laravel 9", "Html5", "Css3", "Bootstrap 5", "Git", "GitLab"],
       current: false,
       projects: [
-        "Conception et réalisation d'un site e-commerce",
-        "Personnalisation de la liste des produits avec consultation et affichage des détails",
-        "Ajout des produits au panier, calcul du prix total, prix par quantité",
-        "Redirection vers le paiement et système de paiement avec choix de la méthode",
-        "Partie administrateur : gestion des produits et des catégories",
-        "Consultation des commandes et suppression automatique des articles"
+        {
+          title: "Minova E-commerce",
+          tasks: [
+            "Developed a product catalog with detailed display",
+            "Managed shopping cart, total calculation, quantities, dynamic pricing",
+            "Implemented checkout process & payment method",
+            "Developed admin dashboard: products, categories, orders",
+            "Automated product removal after order confirmation"
+          ]
+        }
       ]
     },
+
     {
-      title: "Développeur Web",
+      title: "Web Developer",
       company: "Minova Consulting",
-      location: "Tinghir, Maroc",
-      period: "Mai 2022 - Juillet 2022",
-      description: "Conception et réalisation d'un système de gestion des parcs automobiles avec fonctionnalités de suivi et mise à jour automatique.",
+      location: "Tinghir, Morocco",
+      period: "May 2022 - July 2022",
+      description:
+        "Developed a fleet management system with automatic vehicle status updates.",
       technologies: ["PHP", "MySQL", "Html5", "Css3", "Bootstrap 5"],
       current: false,
       projects: [
-        "Conception et réalisation d'un système de gestion des parcs automobiles",
-        "Gestion des informations des véhicules : matricule, modèle, dates d'entrée et de sortie",
-        "Mise à jour automatique du statut des véhicules",
-        "Fonctionnalités d'ajout, de modification et de suppression des véhicules",
-        "Interface utilisateur intuitive pour la gestion des enregistrements"
+        {
+          title: "Fleet Management System",
+          tasks: [
+            "Managed vehicles: license plate, model, in/out, status",
+            "Automated vehicle status based on usage date",
+            "Full CRUD (add, edit, delete)",
+            "Simplified UI for data management"
+          ]
+        }
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Diplôme d'ingénierie en système d'information",
-      school: "Institut supérieur d'ingénierie & des affaires",
-      location: "Marrakech, Maroc",
-      period: "Septembre 2022 - Septembre 2024",
-      description: "Formation d'ingénieur spécialisée dans les systèmes d'information et le développement logiciel",
+      degree: "Engineering Degree in Information Systems",
+      school: "Higher Institute of Engineering & Business",
+      location: "Marrakech, Morocco",
+      period: "September 2022 - September 2024",
+      description: "Engineering training specialized in information systems and software development",
       type: "diploma"
     },
     {
-      degree: "Licence professionnelle en informatique",
-      school: "Université Privée de Marrakech",
-      location: "Marrakech, Maroc",
-      period: "Septembre 2021 - Juillet 2022",
-      description: "Formation professionnelle en informatique avec spécialisation développement",
+      degree: "Professional Bachelor's in Computer Science",
+      school: "Private University of Marrakech",
+      location: "Marrakech, Morocco",
+      period: "September 2021 - July 2022",
+      description: "Professional training in computer science with a focus on development",
       type: "license"
     },
     {
-      degree: "Diplôme de technicien spécialisé en développement informatique",
-      school: "Institut Spécialisé de Technologie Appliquée",
-      location: "Tinghir, Maroc",
-      period: "Septembre 2019 - Juillet 2021",
-      description: "Formation technique spécialisée en développement informatique et programmation",
+      degree: "Specialized Technician Diploma in Software Development",
+      school: "Institute of Applied Technology",
+      location: "Tinghir, Morocco",
+      period: "September 2019 - July 2021",
+      description: "Technical training specialized in programming and software development",
       type: "technical"
     },
     {
-      degree: "Baccalauréat en sciences physiques",
-      school: "Lycée Salah Eddine El Ayoubi",
-      location: "Tinghir, Maroc",
-      period: "Septembre 2018 - Juin 2019",
-      description: "Baccalauréat scientifique avec spécialisation en sciences physiques",
+      degree: "Baccalaureate in Physical Sciences",
+      school: "Salah Eddine El Ayoubi High School",
+      location: "Tinghir, Morocco",
+      period: "September 2018 - June 2019",
+      description: "Scientific high school diploma with specialization in physical sciences",
       type: "bac"
     }
   ];
 
   const certifications = [
     "JavaScript",
-    "Devenir spécialiste de l'intelligence artificielle", 
+    "Becoming an AI Specialist",
     "Angular for Beginners: From Basics to Advanced Projects",
-    "L'essentiel de Docker"
+    "Docker Essentials"
   ];
 
   const getEducationIcon = (type: string) => {
     switch (type) {
-      case 'diploma':
-        return '🎓';
-      case 'license':
-        return '📜';
-      case 'technical':
-        return '🔧';
-      case 'bac':
-        return '📚';
-      default:
-        return '🎓';
+      case 'diploma': return '🎓';
+      case 'license': return '📜';
+      case 'technical': return '🔧';
+      case 'bac': return '📚';
+      default: return '🎓';
     }
   };
 
   const getEducationColor = (type: string) => {
     switch (type) {
-      case 'diploma':
-        return 'from-purple-600 to-blue-600';
-      case 'license':
-        return 'from-blue-600 to-cyan-600';
-      case 'technical':
-        return 'from-green-600 to-teal-600';
-      case 'bac':
-        return 'from-orange-600 to-red-600';
-      default:
-        return 'from-blue-600 to-purple-600';
+      case 'diploma': return 'from-purple-600 to-blue-600';
+      case 'license': return 'from-blue-600 to-cyan-600';
+      case 'technical': return 'from-green-600 to-teal-600';
+      case 'bac': return 'from-orange-600 to-red-600';
+      default: return 'from-blue-600 to-purple-600';
     }
   };
 
   return (
     <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* --- TITLE --- */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-            Mon Parcours
+            My Journey
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Une expérience riche et diversifiée dans le développement web
+            A rich and diverse experience in web development
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Expérience Professionnelle */}
+          
+          {/* --- WORK EXPERIENCE --- */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center">
               <Briefcase className="mr-3 text-blue-600" />
-              Expérience Professionnelle
+              Professional Experience
             </h3>
-            
+
             <div className="space-y-8">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative">
+                  
                   <div className={`bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ${
                     exp.current ? 'ring-2 ring-blue-600 ring-opacity-50' : ''
                   }`}>
+
+                    {/* CURRENT BADGE */}
                     {exp.current && (
                       <div className="absolute -top-2 -right-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
-                        Actuel
+                        Current
                       </div>
                     )}
-                    
+
+                    {/* HEADER */}
                     <div className="flex justify-between items-start mb-4">
                       <div>
                         <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
@@ -195,25 +284,31 @@ const Experience: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    
+
+                    {/* DESCRIPTION */}
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                       {exp.description}
                     </p>
 
+                    {/* PROJECTS */}
                     {exp.projects && (
-                      <div className="mb-4">
-                        <h5 className="font-semibold text-gray-900 dark:text-white mb-2">Réalisations clés :</h5>
-                        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                          {exp.projects.map((project, projectIndex) => (
-                            <li key={projectIndex} className="flex items-start">
-                              <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                              {project}
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="mb-4 space-y-4">
+                        {exp.projects.map((project, pIndex) => (
+                          <div key={pIndex}>
+                            <h5 className="font-semibold text-gray-900 dark:text-white flex items-center mb-1">
+                              <span className="mr-2">📌</span> {project.title}
+                            </h5>
+                            <ul className="text-sm text-gray-600 dark:text-gray-400 list-disc pl-6 space-y-1">
+                              {project.tasks.map((task, tIndex) => (
+                                <li key={tIndex}>{task}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
                       </div>
                     )}
-                    
+
+                    {/* TECHNOLOGIES */}
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, techIndex) => (
                         <span
@@ -225,7 +320,7 @@ const Experience: React.FC = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   {index < experiences.length - 1 && (
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-8 bg-gray-300 dark:bg-gray-600 mt-4"></div>
                   )}
@@ -234,23 +329,27 @@ const Experience: React.FC = () => {
             </div>
           </div>
 
-          {/* Formation et Certifications */}
+          {/* ---- EDUCATION + CERTIFICATIONS ---- */}
           <div className="space-y-12">
-            {/* Formation */}
+
+            {/* Education */}
             <div>
               <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center">
                 <GraduationCap className="w-6 h-6 mr-3 text-blue-600" />
-                Diplômes et Formations
+                Degrees & Education
               </h3>
-              
+
               <div className="space-y-6">
                 {education.map((edu, index) => (
-                  <div key={index} className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-                    {/* Icône de type de diplôme */}
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                  >
+
                     <div className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-r ${getEducationColor(edu.type)} rounded-full flex items-center justify-center text-white text-xl`}>
                       {getEducationIcon(edu.type)}
                     </div>
-                    
+
                     <div className="pr-16">
                       <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 leading-tight">
                         {edu.degree}
@@ -297,26 +396,27 @@ const Experience: React.FC = () => {
               </div>
             </div>
 
-            {/* Résumé du parcours */}
+            {/* Résumé édus */}
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                Parcours Académique
+                Academic Summary
               </h4>
               <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex justify-between">
-                  <span>Niveau d'études :</span>
-                  <span className="font-medium text-blue-600 dark:text-blue-400">Bac+5 (Ingénieur)</span>
+                  <span>Education Level:</span>
+                  <span className="font-medium text-blue-600 dark:text-blue-400">Master’s Degree (Engineer)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Spécialisation :</span>
-                  <span className="font-medium">Systèmes d'information</span>
+                  <span>Specialization:</span>
+                  <span className="font-medium">Information Systems</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Années d'études :</span>
+                  <span>Years of Study:</span>
                   <span className="font-medium">2018 - 2024</span>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

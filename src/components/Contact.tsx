@@ -21,8 +21,8 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulation d'envoi (remplacer par votre logique d'envoi)
+
+    // Sending simulation (replace with your logic)
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
       setSubmitStatus('success');
@@ -44,14 +44,14 @@ const Contact: React.FC = () => {
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Téléphone",
+      title: "Phone",
       details: "+212 653 321215",
       link: "tel:+212653321215"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Localisation",
-      details: "Rabat, Maroc",
+      title: "Location",
+      details: "Rabat, Morocco",
       link: "#"
     }
   ];
@@ -74,26 +74,28 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-            Contactez-moi
+            Contact Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Une idée, un projet ou simplement envie d'échanger ? N'hésitez pas à me contacter !
+            Have an idea, a project, or just want to talk? Feel free to reach out!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Informations de contact */}
+
+          {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                Restons en Contact
+                Let’s Stay Connected
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                Je suis toujours ouvert aux nouvelles opportunités et collaborations. 
-                Que ce soit pour un projet freelance, un poste permanent ou simplement 
-                pour échanger sur les technologies web, n'hésitez pas à me contacter.
+                I’m always open to new opportunities and collaborations.
+                Whether it’s a freelance project, a full-time position,
+                or simply a discussion about web technologies — feel free to contact me.
               </p>
             </div>
 
@@ -118,10 +120,10 @@ const Contact: React.FC = () => {
               ))}
             </div>
 
-            {/* Réseaux sociaux */}
+            {/* Social Networks */}
             <div className="space-y-6">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Réseaux Sociaux
+                Social Networks
               </h4>
               {socialLinks.map((social, index) => (
                 <div key={index} className="flex items-center space-x-4 group">
@@ -145,27 +147,27 @@ const Contact: React.FC = () => {
               ))}
             </div>
 
-            {/* Disponibilité */}
+            {/* Availability */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
-                Disponibilité
+                Availability
               </h4>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-gray-700 dark:text-gray-300">
-                  Disponible pour de nouveaux projets
+                  Available for new projects
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Formulaire de contact */}
+          {/* Contact Form */}
           <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Nom complet *
+                    Full Name *
                   </label>
                   <input
                     type="text"
@@ -175,7 +177,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-white"
-                    placeholder="Votre nom"
+                    placeholder="Your name"
                   />
                 </div>
                 <div>
@@ -190,14 +192,14 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-white"
-                    placeholder="votre@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Sujet *
+                  Subject *
                 </label>
                 <input
                   type="text"
@@ -207,7 +209,7 @@ const Contact: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-white"
-                  placeholder="Sujet de votre message"
+                  placeholder="Message subject"
                 />
               </div>
 
@@ -223,7 +225,7 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors duration-200 text-gray-900 dark:text-white resize-none"
-                  placeholder="Décrivez votre projet ou votre demande..."
+                  placeholder="Describe your project or request..."
                 ></textarea>
               </div>
 
@@ -235,28 +237,28 @@ const Contact: React.FC = () => {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Envoi en cours...
+                    Sending...
                   </>
                 ) : (
                   <>
                     <Send className="mr-2" size={20} />
-                    Envoyer le message
+                    Send Message
                   </>
                 )}
               </button>
 
-              {/* Messages de statut */}
+              {/* Status Messages */}
               {submitStatus === 'success' && (
                 <div className="flex items-center text-green-600 dark:text-green-400">
                   <CheckCircle className="mr-2" size={20} />
-                  Message envoyé avec succès ! Je vous répondrai rapidement.
+                  Message sent successfully! I will get back to you shortly.
                 </div>
               )}
 
               {submitStatus === 'error' && (
                 <div className="flex items-center text-red-600 dark:text-red-400">
                   <AlertCircle className="mr-2" size={20} />
-                  Erreur lors de l'envoi. Veuillez réessayer.
+                  Error sending message. Please try again.
                 </div>
               )}
             </form>

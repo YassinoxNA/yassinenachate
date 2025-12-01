@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
   ];
 
   const quickLinks = [
-    { name: "À Propos", href: "#about" },
-    { name: "Expérience", href: "#experience" },
-    { name: "Compétences", href: "#skills" },
-    { name: "Projets", href: "#projects" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -42,21 +42,24 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Contenu principal du footer */}
+        
         <div className="py-12 grid md:grid-cols-4 gap-8">
-          {/* Informations personnelles */}
+          
+          {/* Left Section */}
           <div className="md:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Yassine Nachate
               </h3>
-              <p className="text-gray-400 text-sm mt-1">Développeur Front-End</p>
+              <p className="text-gray-400 text-sm mt-1">Full Stack Developer</p>
             </div>
+
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Développeur Front-End passionné basé à Rabat, Maroc. Spécialisé dans React, Angular 
-              et les technologies web modernes. Toujours à la recherche de nouveaux défis et 
-              opportunités de collaboration.
+              Full Stack Developer based in Morocco, specializing in React, Symfony, Laravel, 
+              and modern web technologies. Passionate about building high-performance applications
+              with exceptional user experiences.
             </p>
+
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
                 <a
@@ -73,7 +76,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Liens rapides */}
+          {/* Navigation */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Navigation</h4>
             <ul className="space-y-3">
@@ -90,53 +93,54 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact rapide */}
+          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact</h4>
             <div className="space-y-3 text-gray-400">
+              
               <div>
                 <p className="text-sm text-gray-500">Email</p>
-                <a 
-                  href="mailto:yassinenachat4@gmail.com"
-                  className="hover:text-white transition-colors duration-200"
-                >
+                <a href="mailto:yassinenachat4@gmail.com" className="hover:text-white transition-colors duration-200">
                   yassinenachat4@gmail.com
                 </a>
               </div>
+
               <div>
-                <p className="text-sm text-gray-500">Téléphone</p>
-                <a 
-                  href="tel:+212653321215"
-                  className="hover:text-white transition-colors duration-200"
-                >
+                <p className="text-sm text-gray-500">Phone</p>
+                <a href="tel:+212653321215" className="hover:text-white transition-colors duration-200">
                   +212 653 321215
                 </a>
               </div>
+
               <div>
-                <p className="text-sm text-gray-500">Localisation</p>
-                <span>Rabat, Maroc</span>
+                <p className="text-sm text-gray-500">Location</p>
+                <span>Rabat, Morocco</span>
               </div>
+
             </div>
           </div>
+
         </div>
 
-        {/* Ligne de séparation */}
         <div className="border-t border-gray-800"></div>
 
-        {/* Copyright et bouton retour en haut */}
+        {/* Bottom Bar */}
         <div className="py-6 flex flex-col md:flex-row justify-between items-center">
+          
           <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-            <span>© {new Date().getFullYear()} Yassine Nachate. </span>
+            <span>© {new Date().getFullYear()} Yassine Nachate. All rights reserved.</span>
           </div>
 
           <button
             onClick={scrollToTop}
             className="p-2 bg-gray-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 text-gray-300 hover:text-white rounded-full transition-all duration-300 transform hover:scale-110"
-            aria-label="Retour en haut"
+            aria-label="Back to top"
           >
             <ArrowUp size={20} />
           </button>
+
         </div>
+
       </div>
     </footer>
   );
