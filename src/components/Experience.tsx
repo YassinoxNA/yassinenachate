@@ -3,31 +3,8 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experiences = [
-    {
-  title: "Freelance Front-End Developer",
-  company: "Self-employed",
-  location: "Remote",
-  period: "2025 - Present",
-  description:
-    "Development of modern and responsive landing pages for clients using React.js and Tailwind CSS.",
-  technologies: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
-  current: false,
-  projects: [
-    {
-      title: "Landing Pages Development",
-      tasks: [
-        "Created landing pages for different client needs using React.js and Tailwind CSS.",
-        "Built reusable and maintainable React components for sections such as Hero, Features, Pricing, and FAQ.",
-        "Implemented responsive layouts optimized for all screen sizes.",
-        "Integrated contact forms and newsletter forms with API submission.",
-        "Configured routing, project structure, and reusable components for scalability.",
-        "Ensured high performance and optimized loading time.",
-        "Delivered fully functional pages ready for deployment."
-      ]
-    }
-  ]
-}
-,
+ 
+
     {
       title: "Full Stack Developer",
       company: "Imperium",
