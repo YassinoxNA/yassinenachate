@@ -50,6 +50,7 @@ const Skills: React.FC = () => {
       title: "Backend",
       color: "from-green-500 to-emerald-500",
       skills: [
+          { name: "Spring Boot", level: 100 },
         { name: "PHP", level: 80 },
         { name: "Symfony", level: 85 },
         { name: "Laravel", level: 80 },
@@ -64,9 +65,18 @@ const Skills: React.FC = () => {
         { name: "Git", level: 90 },
         { name: "GitLab", level: 85 },
         { name: "Docker", level: 70 },
-        { name: "Postman", level: 85 }
+        { name: "Postman", level: 85 },
+          { name: "WordPress", level: 85 } 
       ]
-    }
+    },
+    {
+  icon: <Palette className="w-8 h-8" />,
+  title: "CMS & Platforms",
+  color: "from-indigo-500 to-purple-500",
+  skills: [
+    { name: "WordPress", level: 85 }
+  ]
+}
   ];
 
   const languages = [

@@ -11,116 +11,154 @@ import {
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
-  const projects = [
-    {
-      id: 1,
-      title: "LineUp Cinema Platform",
-      company: "Imperium",
-      period: "December 2024 - Present",
-      location: "Casablanca, Morocco",
-      description:
-        "Advanced cinema platform with a modern user interface for browsing and managing movies.",
-      longDescription:
-        "Complete cinema platform with advanced filters, notifications, favorites, and optimized performance.",
-      images: [
-        "./assets/images/lineup/1.png",
-        "./assets/images/lineup/2.png",
-        "./assets/images/lineup/3.png",
-        "./assets/images/lineup/4.png",
-        "./assets/images/lineup/5.png",
-        "./assets/images/lineup/6.png",
-        "./assets/images/lineup/7.png"
-      ],
-      technologies: ["React.js", "Tailwind CSS", "Symfony", "Git", "GitLab"],
-      current: true,
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Event Management Platform",
-      company: "3W Media",
-      period: "February 2024 - December 2024",
-      location: "Casablanca, Morocco",
-      description:
-        "Complete event and calendar management system with reminders and customization.",
-      longDescription:
-        "Event management solution with calendars, reminders, contacts, notes, and user settings.",
-      images: [
-        "./assets/images/events/1.png",
-        "./assets/images/events/2.png",
-        "./assets/images/events/3.png",
-        "./assets/images/events/4.png",
-         "./assets/images/events/5.png",
-          "./assets/images/events/6.png",
-              "./assets/images/events/7.png",
-                "./assets/images/events/8.png"
-      ],
-      technologies: ["React.js", "Symfony 7", "MySQL", "Bootstrap"],
-      current: false,
-      featured: true,
-    },
-   {
-  id: 3,
-  title: "Share+ – Social Media Management Platform",
-  company: "Imperium",
-  period: "December 2025 - Present",
-  location: "Casablanca, Morocco",
-  description:
-    "All-in-one social media management platform for content creation, scheduling, and analytics.",
-  longDescription:
-    "Multi-network social media management platform allowing content creation, drag-and-drop scheduling, automated publishing, real-time analytics dashboards, and collaborative team workflows.",
-  images: [
-    "./assets/images/shareplus/1.png",
-    "./assets/images/shareplus/2.png",
-    "./assets/images/shareplus/3.png"
-  ],
-  technologies: [
-    "React.js",
-    "Tailwind CSS",
-    "Symfony",
-    "REST API",
-    "Postman",
-    "Git",
-    "GitLab"
-  ],
-  current: true,
-  featured: true,
-},
+const projects = [
+  {
+    id: 1,
+    title: "Stock Management System",
+    company: "Freelance",
+    period: "2026",
+    location: "Marrakech, Morocco",
+    description:
+      "Modern stock and inventory management platform for businesses.",
+    longDescription:
+      "Complete stock management solution with product management, inventory tracking, sales, suppliers, invoices, statistics dashboard, and responsive admin panel.",
+    images: [
+      "./assets/images/stock/1.png",
+      "./assets/images/stock/2.png",
+      "./assets/images/stock/3.png",
+      "./assets/images/stock/4.png"
+    ],
+    technologies: [
+      "React.js",
+      "Spring Boot",
+      "MySQL",
+      "Tailwind CSS",
+      "REST API",
+      "Git"
+    ],
+    current: true,
+    featured: true,
+  },
 
-{
-  id: 4,
-  title: "Project+ – Collaborative Project Management Platform",
-  company: "Imperium",
-  period: "December 2025 - Present",
-  location: "Casablanca, Morocco",
-  description:
-    "Collaborative platform for managing projects, tasks, and teams.",
-  longDescription:
-    "Project management solution with interactive dashboards, task tracking, role-based permissions, activity logs, and real-time notifications.",
-  images: [
-    "./assets/images/projectplus/1.png",
-    "./assets/images/projectplus/2.png",
-    "./assets/images/projectplus/3.png",
-    "./assets/images/projectplus/4.png",
-    "./assets/images/projectplus/5.png",
-    "./assets/images/projectplus/6.png",
-    "./assets/images/projectplus/7.png",
+  {
+    id: 2,
+    title: "LineUp Cinema Platform",
+    company: "Imperium",
+    period: "December 2024 - Present",
+    location: "Casablanca, Morocco",
+    description:
+      "Advanced cinema platform with a modern user interface for browsing and managing movies.",
+    longDescription:
+      "Complete cinema platform with advanced filters, notifications, favorites, and optimized performance.",
+    images: [
+      "./assets/images/lineup/1.png",
+      "./assets/images/lineup/2.png",
+      "./assets/images/lineup/3.png",
+      "./assets/images/lineup/4.png",
+      "./assets/images/lineup/5.png",
+      "./assets/images/lineup/6.png",
+      "./assets/images/lineup/7.png"
+    ],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Symfony",
+      "Git",
+      "GitLab"
+    ],
+    current: true,
+    featured: true,
+  },
 
-  ],
-  technologies: [
-    "React.js",
-    "Tailwind CSS",
-    "Metronic",
-    "Symfony",
-    "Git",
-    "GitLab"
-  ],
-  current: true,
-  featured: false,
-}
+  {
+    id: 3,
+    title: "Event Management Platform",
+    company: "3W Media",
+    period: "February 2024 - December 2024",
+    location: "Casablanca, Morocco",
+    description:
+      "Complete event and calendar management system with reminders and customization.",
+    longDescription:
+      "Event management solution with calendars, reminders, contacts, notes, and user settings.",
+    images: [
+      "./assets/images/events/1.png",
+      "./assets/images/events/2.png",
+      "./assets/images/events/3.png",
+      "./assets/images/events/4.png",
+      "./assets/images/events/5.png",
+      "./assets/images/events/6.png",
+      "./assets/images/events/7.png",
+      "./assets/images/events/8.png"
+    ],
+    technologies: [
+      "React.js",
+      "Symfony 7",
+      "MySQL",
+      "Bootstrap"
+    ],
+    current: false,
+    featured: true,
+  },
 
- 
-  ];
+  {
+    id: 4,
+    title: "Share+ – Social Media Management Platform",
+    company: "Imperium",
+    period: "December 2025 - Present",
+    location: "Casablanca, Morocco",
+    description:
+      "All-in-one social media management platform for content creation, scheduling, and analytics.",
+    longDescription:
+      "Multi-network social media management platform allowing content creation, drag-and-drop scheduling, automated publishing, real-time analytics dashboards, and collaborative team workflows.",
+    images: [
+      "./assets/images/shareplus/1.png",
+      "./assets/images/shareplus/2.png",
+      "./assets/images/shareplus/3.png"
+    ],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Symfony",
+      "REST API",
+      "Postman",
+      "Git",
+      "GitLab"
+    ],
+    current: true,
+    featured: true,
+  },
+
+  {
+    id: 5,
+    title: "Project+ – Collaborative Project Management Platform",
+    company: "Imperium",
+    period: "December 2025 - Present",
+    location: "Casablanca, Morocco",
+    description:
+      "Collaborative platform for managing projects, tasks, and teams.",
+    longDescription:
+      "Project management solution with interactive dashboards, task tracking, role-based permissions, activity logs, and real-time notifications.",
+    images: [
+      "./assets/images/projectplus/1.png",
+      "./assets/images/projectplus/2.png",
+      "./assets/images/projectplus/3.png",
+      "./assets/images/projectplus/4.png",
+      "./assets/images/projectplus/5.png",
+      "./assets/images/projectplus/6.png",
+      "./assets/images/projectplus/7.png"
+    ],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Metronic",
+      "Symfony",
+      "Git",
+      "GitLab"
+    ],
+    current: true,
+    featured: false,
+  },
+];
 
   /* ---------------- PROJECT CARD ---------------- */
   const ProjectCard: React.FC<{ project: any }> = ({ project }) => {

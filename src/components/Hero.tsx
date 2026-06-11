@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
             <Linkedin size={24} />
           </a>
           <a
-            href="https://github.com/yassinenachate"
+            href="https://github.com/YassinoxNA"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"

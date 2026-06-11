@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
       icon: <Github className="w-6 h-6" />,
       title: "GitHub",
       details: "yassinenachate",
-      link: "https://github.com/yassinenachate"
+      link: "https://github.com/YassinoxNA"
     }
   ];
 

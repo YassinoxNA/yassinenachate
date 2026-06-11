@@ -4,16 +4,59 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
  
-
+{
+  title: "Full Stack Developer (Freelance)",
+  company: "Freelance",
+  location: "Remote / Morocco",
+  period: "March 2026 - Present",
+  description:
+    "Design and development of full-stack web applications for clients, focusing on scalable SaaS solutions and modern user experiences.",
+  technologies: [
+    "React.js",
+    "Spring Boot",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "Bootstrap",
+    "REST API",
+    "JWT",
+    "Git"
+  ],
+  current: true,
+  projects: [
+    {
+      title: "Stock Management SaaS",
+      tasks: [
+        "Developed a complete SaaS application for stock, sales, and client management",
+        "Implemented secure authentication system (JWT + email OTP)",
+        "Managed products, stock levels, and automatic updates",
+        "Created dashboard for sales tracking and client payments",
+        "Designed responsive UI using React.js and Bootstrap",
+        "Built REST APIs using Spring Boot",
+        "Handled database design with PostgreSQL",
+        "Prepared system for deployment on VPS / Hostinger"
+      ]
+    },
+    {
+      title: "Medical Appointment Booking System",
+      tasks: [
+        "Developed a web platform for managing medical appointments",
+        "Implemented booking system with time slots and availability",
+        "Created admin panel for managing doctors and schedules",
+        "Designed responsive and user-friendly interface",
+        "Integrated backend APIs for appointment management"
+      ]
+    }
+  ]
+},
     {
       title: "Full Stack Developer",
       company: "Imperium",
       location: "Casablanca, Morocco",
-      period: "December 2025 - Present",
+      period: "February 2024 - December 2025",
       description:
         "Development of advanced web platforms with a focus on performance optimization, scalability, and modern software architecture.",
       technologies: ["React.js", "Tailwind CSS", "Metronic", "Symfony", "Postman", "Git", "GitLab"],
-      current: true,
+      current: false,
       projects: [
          {
           title: "Share+ – Social Media Management Platform",
@@ -51,31 +94,7 @@ const Experience: React.FC = () => {
             "Improved UX/UI using React.js, Tailwind CSS & Metronic"
           ]
         },
-
-      ]
-    },
-
-   {
-  title: "Web Developer",
-  company: "Imperium",
-  location: "Casablanca, Morocco",
-  period: "February 2024 - December 2024",
-  description:
-    "Developed Organizer, an advanced event and calendar management platform with personalized calendars, reminders, contacts, notes, and user settings.",
-  technologies: [
-    "React.js",
-    "Symfony 7",
-    "MySQL",
-    "HTML5",
-    "CSS3",
-    "Bootstrap 5",
-    "Git",
-    "GitLab",
-    "Postman"
-  ],
-  current: false,
-  projects: [
-    {
+         {
       title: "Organizer – Event & Calendar Management Platform",
       tasks: [
         "Implemented full CRUD operations for events (create, edit, delete)",
@@ -90,8 +109,11 @@ const Experience: React.FC = () => {
         "Ensured secure REST API communication with Symfony 7"
       ]
     }
-  ]
-},
+
+      ]
+    },
+
+
 
 
     {
