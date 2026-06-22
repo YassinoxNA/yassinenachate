@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         <div className="mb-8">
           <div className="relative mx-auto w-48 h-48 mb-8">
             <img
-              src="./assets/images/Yassine.jpg"
+              src="./assets/images/Yasine.jpg"
               alt="Yassine Nachate"
               className="w-full h-full rounded-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-800"
             />
